@@ -447,9 +447,14 @@
 			  
 			$(window).resize(function() {
 			setHeight();
-			console.log($('#me').height());
 			});
+
+
 			var x = setTimeout(function(){
+				$(window).resize(function() {
+					setHeight();
+				});
+				
 				var thisimg = document.getElementById('thisphoto'); 
 				//or however you get a handle to the IMG
 				var thisheight = thisimg.clientHeight;
