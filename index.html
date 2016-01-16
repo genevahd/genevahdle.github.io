@@ -427,6 +427,7 @@
     <script src="bootstrap-3.3.6/assets/js/ie10-viewport-bug-workaround.js"></script>
     	<script type="text/javascript">
 		$(document).ready(function(){
+			console.log($('#me').height());
 			function setHeight() {
 			windowHeight = $(window).innerHeight() *.95;
 			doubleHeight = 1.9 * windowHeight;
@@ -440,12 +441,20 @@
 			$('#skills-page').css('height', skillsHeight);
 			$('#about-page').css('height', windowHeight);
 			$('#contact-page').css('height', windowHeight*.9);
+			console.log($('#me').height());
 			};
 			
 			  
 			$(window).resize(function() {
 			setHeight();
-			});			
+			console.log($('#me').height());
+			});
+			var x = setTimeout(function(){
+				var thisimg = document.getElementById('thisphoto'); 
+				//or however you get a handle to the IMG
+				var thisheight = thisimg.clientHeight;
+			$('#me').css('height', thisheight);
+			}, 100);
 			//choose class name for section .css height = the window.inner height
 
 
