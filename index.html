@@ -427,7 +427,10 @@
     <script src="bootstrap-3.3.6/assets/js/ie10-viewport-bug-workaround.js"></script>
     	<script type="text/javascript">
 		$(document).ready(function(){
-			console.log($('#me').height());
+
+			var thisimg = document.getElementById('thisphoto'); 
+			var thisheight = thisimg.clientHeight;
+			$('#me').css('min-height', thisheight);
 			function setHeight() {
 			windowHeight = $(window).innerHeight() *.95;
 			doubleHeight = 1.9 * windowHeight;
