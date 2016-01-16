@@ -363,7 +363,7 @@
 			<img width="100%"  id="image-jump" src="images/photos/jump1.jpg" alt="Geneva">
 		</div> -->
 
-		<div id="me" class="col-md-6" >
+		<div id="me" style="min-height: 500px;" class="col-md-6" >
 			<img id="thisphoto" width="95%" class="bottom" src="images/photos/me2.jpg" alt="Geneva">
 			<img width="95%" class="top" src="images/photos/me1.jpg" alt="Geneva">
 		</div>
@@ -427,6 +427,7 @@
     <script src="bootstrap-3.3.6/assets/js/ie10-viewport-bug-workaround.js"></script>
     	<script type="text/javascript">
 		$(document).ready(function(){
+			console.log($('#me').height());
 			function setHeight() {
 			windowHeight = $(window).innerHeight() *.95;
 			doubleHeight = 1.9 * windowHeight;
@@ -434,18 +435,32 @@
 				var thisimg = document.getElementById('thisphoto'); 
 				//or however you get a handle to the IMG
 				var thisheight = thisimg.clientHeight;
+			$('#me').css('height', thisheight);
 			$('.image-background ').css('height', windowHeight);
 			$('#projects-page ').css('height', doubleHeight);
 			$('#skills-page').css('height', skillsHeight);
 			$('#about-page').css('height', windowHeight);
 			$('#contact-page').css('height', windowHeight*.9);
-			$('#me').css('height', thisheight);
+			console.log($('#me').height());
 			};
-			setHeight();
+			
 			  
 			$(window).resize(function() {
 			setHeight();
-			});			
+			});
+
+			$(window).trigger('resize');
+
+			var x = setTimeout(function(){
+				$(window).resize(function() {
+					setHeight();
+				});
+
+				var thisimg = document.getElementById('thisphoto'); 
+				//or however you get a handle to the IMG
+				var thisheight = thisimg.clientHeight;
+			$('#me').css('height', thisheight);
+			}, 100);
 			//choose class name for section .css height = the window.inner height
 
 
@@ -523,6 +538,7 @@ $(function() {
       }
     }
   });
+  setHeight();
 });	
 
 		}) // end of JQuery
