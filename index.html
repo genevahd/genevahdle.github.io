@@ -434,12 +434,12 @@
 				var thisimg = document.getElementById('thisphoto'); 
 				//or however you get a handle to the IMG
 				var thisheight = thisimg.clientHeight;
+			$('#me').css('height', thisheight);
 			$('.image-background ').css('height', windowHeight);
 			$('#projects-page ').css('height', doubleHeight);
 			$('#skills-page').css('height', skillsHeight);
 			$('#about-page').css('height', windowHeight);
 			$('#contact-page').css('height', windowHeight*.9);
-			$('#me').css('height', thisheight);
 			};
 			setHeight();
 			  
