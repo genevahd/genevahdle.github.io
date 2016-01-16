@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Web Developer Portfolio, Geneva Le">
     <meta name="author" content="Geneva Le">
@@ -45,6 +45,7 @@
 
 <body>
 <!--  NAV BAR /////////////////////////////////////////// -->
+    <div class="container">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -53,8 +54,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button></div>
-          <a class="navbar-brand animated pulse infinite" href="#"><b style="font-size:15pt;  color: #a9c6c2;">geneva</b>hd</a>
-        <div id="navbar" class="collapse navbar-collapse pull-right">
+          <a class="navbar-brand animated pulse infinite navbar-left" href="#"><b style="font-size:15pt;  color: #a9c6c2;">geneva</b>hd</a>
+        <div id="navbar" class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
             <li><a href="#projects-page" class="scrollto">projects</a></li>
             <li><a href="#skills-page">skills</a></li>
@@ -63,43 +64,42 @@
           </ul>
         </div><!--/.nav-collapse -->
     </nav>
-
+</div>
 
 
 
 
 <!--  Background Image /////////////////////////////////////////// -->
-<div id="landing-page">
-	<img class="image-background img-responsive" src="images/background.jpg">
-	<div style="margin-left: 5%; margin-right: 5%;">
-	<div class="row col-md-12">
-			
-			<img id="logo" class="logo col-md-6 col-md-offset-6" width="95%" src="images/genevahd-rose-quartz.png">
-			<img id="logo1" class="logo col-md-6 col-md-offset-6" width="95%" src="images/genevahd-serenity.png">
-			<img id="logo2" class="logo col-md-6 col-md-offset-6" width="95%" src="images/genevahd-opal-blue.png">
-			</div>
+	<div id="landing-page" class="hidden-xs">
+		<img class="image-background img-responsive" src="images/background.jpg">
+		<div style="margin-left: 5%; margin-right: 5%;">
+		<div class="row col-md-12">
+				
+				<img id="logo" class="logo col-md-6 col-md-offset-6" width="95%" src="images/genevahd-rose-quartz.png">
+				<img id="logo1" class="logo col-md-6 col-md-offset-6" width="95%" src="images/genevahd-serenity.png">
+				<img id="logo2" class="logo col-md-6 col-md-offset-6" width="95%" src="images/genevahd-opal-blue.png">
+				</div>
+		</div>
 	</div>
-</div>
-
 
 
 
 
 
 <!--  PROJECTS PAGE /////////////////////////////////////////// -->
-<div id="projects-page">
+<div id="projects-page" class="container-fluid">
 	<div class="row col-md-12 center">
 		<h1 class="wow wobble" style="color: rgb(247,202,201); margin-top:50px;">MY PROJECTS</h1>
 	</div>
-	<div class="row col-md-7 col-md-offset-5 text-center">
+	<div class="row col-xs-12 col-md-7 col-md-offset-5 text-center">
 		<h3 class="wow bounceInDown" style="color:grey;"><a  class="wow pulse" data-wow-iteration="3" data-wow-delay="3s" href="https://github.com/TEnders64/Pokeshop">PokéShop <img width="30" src="images/icon_lang/gitgrey.png"></a></h3>
 	</div>
 	<div class="row>">
-		<div class="col-md-5">
+		<div class="col-xs-12 col-md-5">
 			<p class="lead wow bounceInLeft" style="font-size:13pt;padding-top:40px;">A 3 person project, <span style="font-size: 15pt; font-weight: bolder" class="opal-blue wow tada" data-wow-duration="3s" data-wow-delay="2s">GAG eCOMMERCE WEBSITE</span> selling pokemon. There is a admin side and client side for users. Admin is able to view, add, edit, delete orders and products. I worked on admin views and functions and the building out database and queries. This project integrated the pokemon API and was coded in <span class="serenity">HTML</span>, <span class="serenity">CSS</span>, and <span class="serenity">PHP</span>. <span class="serenity">MySQL</span> was used to build out the EER Diagram and database. SESSIONS was used for cart functionality as well as keeping the user logged in.</p> 
 			
 		</div> 
-	<div class="col-md-7">
+	<div class="col-xs-12 col-md-7">
 		<div id="carousel-1" class="carousel slide col-md-10 col-md-offset-1" data-ride="carousel">
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
@@ -164,14 +164,14 @@
 		</div>
 	</div>
 	</div>
-	<div class="row col-md-7 col-md-offset-5 text-center" style="padding-top:50px;">
+	<div class="row col-xs-12 col-md-7 col-md-offset-5 text-center" style="padding-top:50px;">
 		<h3 class="wow bounceInDown" style="color:grey"> <a class="wow pulse" data-wow-iteration="3" data-wow-delay="3s" href="https://github.com/sinh9x0/scheduler">Employee Scheduler <img width="30" src="images/icon_lang/gitgrey.png"></a></h3>
 	</div>
 	<div class="row>">
-		<div class="col-md-5">
+		<div class="col-xs-12 col-md-5">
 			<p class="lead wow bounceInLeft" style="font-size:12pt ; padding-top:40px;"> A <span style="font-size: 15pt; font-weight: bolder" class="opal-blue wow tada" data-wow-duration="3s" data-wow-delay="2s">REAL TIME SCHEDULING APP</span> created for a tutoring company so they can be able to schedule employees more efficiently. This was a 4 person group project in <span class="serenity">MEAN</span> where we used <span class="serenity">MySQL</span> for the database for ease of table relations / associations. Employers are able to log in, add, edit, and delete employees and shifts.  Employees are able to edit and change days they are available for shifts. Employers can as well and are also able to categorize employees on their job position. Employers are able to assign shifts to employees as well as see who is able to take the shift according to their availability and the category.</p>
 		</div>
-	 <div class="col-md-7">
+	 <div class="col-xs-12 col-md-7">
 		<div id="carousel-2" class="carousel slide col-md-10 col-md-offset-1" data-ride="carousel">
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
@@ -244,10 +244,10 @@
 
 
 <!--  SKILLS PAGE /////////////////////////////////////////// -->
-<div id="skills-page">
+<div id="skills-page" class="container-fluid">
 
 	<div class="row col-md-12">
-		<h1 class="wow wobble" style="color: rgb(247,202,201); margin-top:50px">MY SKILLS</h1>
+		<h1 class="wow wobble" style="color: rgb(247,202,201); margin-top:50px;">MY SKILLS</h1>
 
 	</div>	
 	
@@ -255,107 +255,107 @@
 		<h2 class="text-center wow slideInLeft">WEAPONS OF CHOICE</h2>
 	</div>
 	
-	<div class="row col-md-10 col-md-offset-1 text-center">
+	<div class="row col-xs-12 col-md-10 col-md-offset-1 text-center">
 		<div class="wow bounceInLeft skills col-md-3" data-wow-delay="1s">
 			<h3>HTML</h3>
-			<img src="images/icon_lang/html.png" alt="html-logo">
+			<img class="img-responsive center-block" src="images/icon_lang/html.png" alt="html-logo">
 		</div>
 		<div class="wow bounceInLeft skills col-md-3">
 			<h3>CSS</h3>
-			<img src="images/icon_lang/css.png" alt="css-logo">
+			<img class="img-responsive center-block" src="images/icon_lang/css.png" alt="css-logo">
 		</div>	
 		<div class="wow bounceInRight skills col-md-3">
 			<h3>JAVASCRIPT</h3>
-			<img src="images/icon_lang/javascript.png" alt="javascript-logo">
+			<img class="img-responsive center-block" src="images/icon_lang/javascript.png" alt="javascript-logo">
 		</div>	
 		<div class="wow bounceInRight skills col-md-3" data-wow-delay="1s">
 			<h3>PHP</h3>
-			<img src="images/icon_lang/php.png" alt="php-logo">
+			<img class="img-responsive center-block" src="images/icon_lang/php.png" alt="php-logo">
 		</div>
 	</div>
-	<div class="row col-md-10 col-md-offset-1 text-center">
+	<div class="row col-xs-12 col-md-10 col-md-offset-1 text-center">
 		<div class="wow bounceInLeft skills col-md-3" data-wow-delay="1s">
 			<h3>MYSQL</h3>
-			<img src="images/icon_lang/mysql.png" alt="mysql-logo">
+			<img class="img-responsive center-block" src="images/icon_lang/mysql.png" alt="mysql-logo">
 		</div>
 		<div class="wow bounceInLeft skills col-md-3">
 			<h3>JQUERY</h3>
-			<img src="images/icon_lang/jquery.gif" alt="jquery-logo">
+			<img class="img-responsive center-block" src="images/icon_lang/jquery.gif" alt="jquery-logo">
 		</div>
 		<div class="wow bounceInRight skills col-md-3">
 			<h3>SQLITE</h3>
-			<img src="images/icon_lang/sqlite.png" alt="sqlite-logo">
+			<img class="img-responsive center-block" src="images/icon_lang/sqlite.png" alt="sqlite-logo">
 		</div>
 		<div class="wow bounceInRight skills col-md-3" data-wow-delay="1s">
 			<h3>BOOTSTRAP</h3>
-			<img src="images/icon_lang/bootstrap.png" alt="bootstrap-logo">
+			<img class="img-responsive center-block" src="images/icon_lang/bootstrap.png" alt="bootstrap-logo">
 		</div>
 	</div>
-	<div class="row col-md-6 col-md-offset-3 text-center">
+	<div class="row col-xs-6 col-xs-offset-3 col-md-6 col-md-offset-3 text-center">
 		<div class="wow bounceInLeft skills col-md-6">
 			<h3>RUBY</h3>
-			<img src="images/icon_lang/ruby.png" alt="ruby-logo">
+			<img class="img-responsive center-block" src="images/icon_lang/ruby.png" alt="ruby-logo">
 		</div>
 		<div class="wow bounceInRight skills col-md-6">
 			<h3>RAILS</h3>
-			<img src="images/icon_lang/rubyonrails.png" alt="rails-logo">
+			<img class="img-responsive center-block" src="images/icon_lang/rubyonrails.png" alt="rails-logo">
 		</div>
 	</div>	
 	
 <!--  OTHER SKILLS  /////////////////////////////////////////// -->
-	<div class="row col-md-12">	
+	<div class="row col-md-12" >	
 		<h2 class="text-center wow slideInLeft">TECHNICAL TOOLBOX</h2>
 	</div>
-	<div class="row col-md-10 col-md-offset-1 text-center" style="padding-top: 15px;">
+	<div class="row col-xs-12 col-md-10 col-md-offset-1 text-center" style="padding-top: 15px;">
 		<div class="wow bounceInLeft toolbox col-md-3" data-wow-delay="1s">
 			<h4>GITHUB</h4>
-			<img src="images/icon_lang/github.png" alt="github-logo">
+			<img class="img-responsive center-block" src="images/icon_lang/github.png" alt="github-logo">
 		</div>
 		<div class="wow bounceInLeft toolbox col-md-3">
 			<h4>CODEIGNITER</h4>
-			<img src="images/icon_lang/codeigniter.jpg" alt="codeigniter-logo">
+			<img class="img-responsive center-block" src="images/icon_lang/codeigniter.jpg" alt="codeigniter-logo">
 		</div>
 		<div class="wow bounceInRight toolbox col-md-3">
 			<h4>MONGODB</h4>
-			<img src="images/icon_lang/mongodb.png" alt="mongodb-logo">
+			<img class="img-responsive center-block" src="images/icon_lang/mongodb.png" alt="mongodb-logo">
 		</div>
 		<div class="wow bounceInRight toolbox col-md-3" data-wow-delay="1s">
 			<h4>AJAX</h4>
-			<img src="images/icon_lang/ajax.png" alt="ajax-logo">
+			<img class="img-responsive center-block" src="images/icon_lang/ajax.png" alt="ajax-logo">
 		</div>
 	</div>
-	<div class="row col-md-10 col-md-offset-1 text-center">
+	<div class="row col-xs-12 col-md-10 col-md-offset-1 text-center">
 		<div class="wow bounceInLeft toolbox col-md-3" data-wow-delay="1s">
 			<h4>NODE.JS</h4>
-			<img src="images/icon_lang/nodejs.png" alt="nodejs-logo">
+			<img class="img-responsive center-block" src="images/icon_lang/nodejs.png" alt="nodejs-logo">
 		</div>
 		<div class="wow bounceInLeft toolbox col-md-3">
 			<h4>ANGULAR</h4>
-			<img src="images/icon_lang/angular.png" alt="angular-logo">
+			<img class="img-responsive center-block" src="images/icon_lang/angular.png" alt="angular-logo">
 		</div>
 		<div class="wow bounceInRight toolbox col-md-3">
 			<h4>C++</h4>
-			<img src="images/icon_lang/c++.png" alt="c++-logo">
+			<img class="img-responsive center-block" src="images/icon_lang/c++.png" alt="c++-logo">
 		</div>
 		<div class="wow bounceInRight toolbox col-md-3" data-wow-delay="1s">
 			<h4>CorelDRAW</h4>
-			<img src="images/icon_lang/corel_draw.png" alt="corel-draw-logo">
+			<img class="img-responsive center-block" src="images/icon_lang/corel_draw.png" alt="corel-draw-logo">
 		</div>
 	</div>
 </div>
 
 <!--  ABOUT /////////////////////////////////////////// -->
-<div id="about-page">
+<div id="about-page" class="container-fluid">
 	<div class="row col-md-12">
 	<div class="col-md-12">
 		<h1 style="color: rgb(247,202,201); margin-top:65px" class="text-left wow bounceInDown">ABOUT ME</h1>
 	</div>
 
-		<div class="col-md-6">
+		<div class="col-xs-12 col-md-6">
 		<p class="lead wow wobble" data-wow-delay="1s" style="font-size:11pt;"> <span style="font-weight: bolder; font-size: 13pt">Hello there!</span> I’m <span class="serenity" style="font-weight: bolder">Geneva</span> and I am a <span style="font-weight: bolder">web developer</span>, born and raised in sunny Orange County, CA but currently residing in the refreshing Pacific Northwest in beautiful Seattle, WA. Ever since I took my first intro to programming course at CSUF, I was amazed with what could be done with a computer. I have always been fascinated by the <span style="font-weight: bolder">wonders of technology</span> and what it could do, the endless possibilities! From ideas starting out as conceptual to actual working concrete programs, I wanted to dive into a career that would give me satisfaction in seeing a product that would be useful for others. I continued pursuing the field of technology by diving into <span style="font-weight: bolder">Coding Dojo's</span> intensive coding bootcamp and spent over 1200 hours learning and developing.</p>
 		<p class="lead wow wobble" data-wow-delay="2s" style="font-size:11pt;">I’m a curious mind and love experimenting, learning, and growing through research and trial. <i>Being in an environment where those around me want me to succeed and grow is extremely important to me.</i> On my free time I enjoy watching cat videos, baking things I shouldn't be eating, trying new recipes in the kitchen, and exploring new places. </p>
 	</div>
-	<div class="row col-md-6">
+	<div class="row col-xs-12 col-md-6">
 <!-- 		<div class="col-md-6">
 			<img width="100%" id="image-me" src="images/photos/me1.jpg" alt="Geneva">
 		</div>
@@ -363,12 +363,12 @@
 			<img width="100%"  id="image-jump" src="images/photos/jump1.jpg" alt="Geneva">
 		</div> -->
 
-		<div id="me" style="min-height: 500px;" class="col-md-6" >
+		<div id="me" style="min-height: 500px;" class="col-xs-6 col-md-6" >
 			<img id="thisphoto" width="95%" class="bottom" src="images/photos/me2.jpg" alt="Geneva">
 			<img width="95%" class="top" src="images/photos/me1.jpg" alt="Geneva">
 		</div>
 
-		<div id="jump" class="col-md-6" >
+		<div id="jump" class="col-xs-6 col-md-6" >
 			<img width="95%"  class="bottom" src="images/photos/jump2.jpg" alt="Geneva">
 			<img width="95%"  class="top" src="images/photos/jump1.jpg" alt="Geneva">
 		</div>
@@ -376,7 +376,7 @@
 			<img width="110%"  class="top" style="visibility: hidden" src="images/photos/jump1.jpg" alt="Geneva">
 		</div> -->
 		<div class="row col-md-12">
-			<img id="genevahd" class="animated pulse infinite" src="images/genevahd1.png" width="100%" alt="genevahd">
+			<img id="genevahd" class="hidden-xs animated pulse infinite" src="images/genevahd1.png" width="100%" alt="genevahd">
 		</div>
 	</div>
 
@@ -384,7 +384,7 @@
 </div>
 
 <!--  CONTACT /////////////////////////////////////////// -->
-<div id="contact-page">
+<div id="contact-page" class="container-fluid">
 		<div class="row col-md-12">
 			<h1 style="color: rgb(247,202,201); margin-top:25px" class="container text-left wow rubberBand" >LET'S CONNECT</h1>
 		</div>
