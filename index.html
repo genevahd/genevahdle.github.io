@@ -70,17 +70,20 @@
 
 
 <!--  Background Image /////////////////////////////////////////// -->
-	<div id="landing-page" class="hidden-xs hidden-sm">
-		<img class="image-background img-responsive hidden-xs hidden-sm" src="images/background.jpg">
-		<div style="margin-left: 5%; margin-right: 5%;">
-		<div class="row col-md-12">
-				
-				<img id="logo" class="hidden-xs hidden-sm logo col-md-6 col-md-offset-6" width="95%" src="images/genevahd-rose-quartz.png">
-				<img id="logo1" class="hidden-xs hidden-sm logo col-md-6 col-md-offset-6" width="95%" src="images/genevahd-serenity.png">
-				<img id="logo2" class="hidden-xs hidden-sm logo col-md-6 col-md-offset-6" width="95%" src="images/genevahd-opal-blue.png">
-				</div>
-		</div>
+<div id="landing-page">
+	<img class="image-background img-responsive" src="images/background.jpg">
+	<div style="margin-left: 5%; margin-right: 5%;">
+	<div class="row col-md-12">
+			
+			<img id="logo" class="logo col-md-6 col-md-offset-6" width="95%" src="images/genevahd-rose-quartz.png">
+			<img id="logo1" class="logo col-md-6 col-md-offset-6" width="95%" src="images/genevahd-serenity.png">
+			<img id="logo2" class="logo col-md-6 col-md-offset-6" width="95%" src="images/genevahd-opal-blue.png">
+			</div>
 	</div>
+</div>
+
+
+
 
 
 
@@ -439,8 +442,8 @@
 				var thisimg = document.getElementById('thisphoto'); 
 				//or however you get a handle to the IMG
 				var thisheight = thisimg.clientHeight;
-			$('#me').css('min-height', thisheight);
-			$('.image-background ').css('min-height', windowHeight);
+			$('#me').css('height', thisheight);
+			$('.image-background ').css('height', windowHeight);
 			$('#projects-page ').css('min-height', doubleHeight);
 			$('#skills-page').css('min-height', skillsHeight);
 			$('#about-page').css('min-height', windowHeight);
